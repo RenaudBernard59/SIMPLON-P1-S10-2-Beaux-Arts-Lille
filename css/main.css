@@ -1,10 +1,22 @@
 @font-face {
     font-family: lovelo;
-    src: url(../fonts/lovelo.tff);
+    src: url(../fonts/lovelo.ttf);
 }
 @font-face {
     font-family: pba;
-    src: url(../fonts/pba.tff);
+    src: url(../fonts/pba.ttf);
+}
+
+.pba {
+  font-family: pba;
+}
+
+.lovelo {
+  font-family: lovelo;
+}
+
+h1, h2, h3, .navbar-nav li a, #selectactu {
+  text-transform: uppercase;
 }
 
 header {

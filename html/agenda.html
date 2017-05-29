@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="../favicon.png">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
@@ -18,29 +18,46 @@
 
   <!-- ########################## HEADER ########################## -->
 
-  <header class="container">
-    <div class="row">
-      <a href="../index.html">
-        <h1>P<span class="hidden-lg-down">ALAIS </span>B<span class="hidden-lg-down">EAUX-</span>A<span class="hidden-lg-down">RTS </span>LILLE</h1>
+  <header class="container-fluid">
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a href="../index.html" class="navbar-brand">
+        <h1 class="pba">P<span class="hidden-lg-down">ALAIS </span>B<span class="hidden-lg-down">EAUX-</span>A<span class="hidden-lg-down">RTS </span>LILLE</h1>
       </a>
       <p class="hidden-lg-down">AGENDA</p>
-      <nav>
-        <ul>
-          <li><a href="#">Collections</a></li>
-          <li><a href="visiter.html">Visiter</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="#">Infos</a></li>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link lovelo" href="#">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lovelo" href="visiter.html">Visiter</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link lovelo" href="agenda.html">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lovelo" href="#">Infos</a>
+          </li>
         </ul>
-      </nav>
-      <input type="text">
-      <select name="selectlang" id="selectlang">
-        <option value="fr">Français</option>
-        <option value="en">English</option>
-        <option value="nl">Dutch</option>
-      </select>
-      <a href="#"></a>
-      <a href="www.lille.fr"><img src="../img/" alt="Ville de Lille"></a>
-    </div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">search</button>
+        </form>
+        <select name="selectlang" id="selectlang" class="hidden-lg-down">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+          <option value="nl">Dutch</option>
+        </select>
+        <a href="www.lille.fr"><img src="../img/" alt="Ville de Lille"></a>
+      </div>
+    </nav>
+
   </header>
 
   <!-- ########################## HEADER - END ########################## -->
@@ -51,12 +68,12 @@
 
     <div class="row offset-4 col-4">
       <div class="flex-column">
-        <img src="../img/" alt="">
-        <h2>Agenda du musée</h2>
-        <img src="../img/" alt="">
+        <img src="../img/" alt="agenda">
+        <h2 class="lovelo">Agenda du musée</h2>
+        <img src="../img/" alt="triangle">
       </div>
 
-      <select name="selectactu" id="selectactu">
+      <select name="selectactu" id="selectactu" class="lovelo">
         <option value="ttes">Toutes les actualités</option>
         <option value="expo">Exposition</option>
         <option value="visite">Visite</option>
@@ -174,7 +191,7 @@
       </p>
     </article>
 
-    <nav>
+    <nav class="row">
       <p>1 | </p>
       <a href="#">2</a>
       <a href="#">suivant ></a>
