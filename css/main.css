@@ -8,6 +8,7 @@
     src: url(../fonts/pba.ttf);
 }
 
+
 .pba {
   font-family: pba;
 }
@@ -19,6 +20,7 @@
 h2, h3, .navbar-nav li a, #selectactu {
   text-transform: uppercase;
 }
+
 /* ##################################### GENERAL - END ################################## */
 
 
@@ -39,13 +41,31 @@ header p {
 
 /* ##################################### MAIN ################################## */
 
+/* ################# agenda.html ###################### */
 .art_agenda {
   height: 276px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+.visite {
+  color : #935297;
+}
+
+.evenement {
+  color: #D3336C;
+}
+
+.jpublic {
+  color: #79A506;
+}
+
+/* ################# agenda.html ###################### */
+
 /* ##################################### MAIN - END ################################## */
+
+
 @media (min-width: 992px){
   .art_agenda{
     height: auto;
