@@ -1,3 +1,4 @@
+/* ##################################### GENERAL ################################## */
 @font-face {
     font-family: lovelo;
     src: url(../fonts/lovelo.ttf);
@@ -15,10 +16,43 @@
   font-family: lovelo;
 }
 
-h1, h2, h3, .navbar-nav li a, #selectactu {
+h2, h3, .navbar-nav li a, #selectactu {
   text-transform: uppercase;
 }
+/* ##################################### GENERAL - END ################################## */
 
+
+/* ##################################### HEADER ################################## */
 header {
   background-color: #1D1D1E;
+}
+
+header p {
+  color: white;
+}
+
+.logolille {
+  height: 73px;
+  width: 56px;
+}
+/* ##################################### HEADER - END ################################## */
+
+/* ##################################### MAIN ################################## */
+
+.art_agenda {
+  height: 276px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ##################################### MAIN - END ################################## */
+@media (min-width: 992px){
+  .art_agenda{
+    height: auto;
+    background-size: contain;
+  }
+
+  article {
+    height: 295px;
+  }
 }
