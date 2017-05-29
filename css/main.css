@@ -77,15 +77,17 @@ header p {
     height: 295px;
   }
 
-  /*.bordertop {
+  .bordertop {
     border-top: 1px solid;
-  }*/
+  }
 
   .ur_corner {
     width: 37px;
     height: 37px;
     border-top: 16px solid;
     border-right: 16px solid;
+    position: relative;
+    left: 15px;
   }
   .border_visite {
     border-color: #935297;
