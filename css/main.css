@@ -61,6 +61,7 @@ header p {
   color: #79A506;
 }
 
+
 /* ################# agenda.html ###################### */
 
 /* ##################################### MAIN - END ################################## */
@@ -74,5 +75,25 @@ header p {
 
   article {
     height: 295px;
+  }
+
+  /*.bordertop {
+    border-top: 1px solid;
+  }*/
+
+  .ur_corner {
+    width: 37px;
+    height: 37px;
+    border-top: 16px solid;
+    border-right: 16px solid;
+  }
+  .border_visite {
+    border-color: #935297;
+  }
+  .border_evenement {
+    border-color: #D3336C;
+  }
+  .border_jpublic {
+    border-color: #79A506;
   }
 }
