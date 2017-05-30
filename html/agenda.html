@@ -19,46 +19,47 @@
   <!-- ########################## HEADER ########################## -->
 
   <header class="container-fluid">
-
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse align-items-baseline">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="row">
+      <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse align-items-center">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a href="../index.html" class="navbar-brand">
-        <h1 class="pba">p<span class="hidden-lg-down">alais </span>b<span class="hidden-lg-down">eaux-</span>a<span class="hidden-lg-down">rts </span>lille</h1>
-      </a>
-      <p class="hidden-lg-up lovelo">AGENDA</p>
+        <a href="../index.html" class="navbar-brand">
+          <h1 class="pba">p<span class="hidden-lg-down">alais </span>b<span class="hidden-lg-down">eaux-</span>a<span class="hidden-lg-down">rts </span>lille</h1>
+        </a>
+        <p class="hidden-lg-up lovelo">AGENDA</p>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link lovelo" href="#">Collections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lovelo" href="visiter.html">Visiter</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link lovelo" href="agenda.html">Agenda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link lovelo" href="#">Infos</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text">
-          <p class="pba searchicon"></p>
-        </form>
-        <p class="pba infoicon hidden-lg-up"></p>
-        <select name="selectlang" id="selectlang" class="hidden-lg-down">
-          <option value="fr">Français</option>
-          <option value="en">English</option>
-          <option value="nl">Dutch</option>
-        </select>
-        <a href="www.lille.fr" class="logolille hidden-lg-down"><img src="../img/logo-lille.svg" alt="Ville de Lille"></a>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link lovelo" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lovelo" href="visiter.html">Visiter</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link lovelo" href="agenda.html">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lovelo" href="#">Infos</a>
+            </li>
+          </ul>
+        </div>
 
+      </nav>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 hidden-md-down" type="text">
+        <p class="pba searchicon"></p>
+      </form>
+      <select name="selectlang" id="selectlang" class="hidden-md-down">
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+      <option value="nl">Dutch</option>
+    </select>
+      <a href="www.lille.fr" class="logolille hidden-md-down"><img src="../img/logo-lille.svg" alt="Ville de Lille"></a>
+      <p class="pba infoicon hidden-lg-up"></p>
+    </div>
   </header>
 
   <!-- ########################## HEADER - END ########################## -->
@@ -260,8 +261,7 @@
   <!-- ############## JS sources ############## -->
 
   <script>
-
-  // this script loads background images for img divs in articles
+    // this script loads background images for img divs in articles
     window.onload = addbg();
 
     function addbg() {

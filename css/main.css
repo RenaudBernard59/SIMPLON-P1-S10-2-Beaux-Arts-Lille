@@ -33,6 +33,10 @@ header p, form input.form-control, form input.form-control:focus {
   color: white;
 }
 
+h1 {
+  font-size: 1.4rem;
+}
+
 .logolille {
   height: 73px;
   width: 56px;
@@ -46,6 +50,7 @@ form input.form-control {
   border-radius: 0;
   padding-right: 30px;
 }
+
 form input.form-control:focus, form input.form-control:hover {
   border-color: #D8383F;
 }
@@ -66,6 +71,9 @@ form input.form-control:focus, form input.form-control:hover {
 
 .agendaicon::before {
   content: "\e901";
+}
+.agendaicon {
+  font-size: 7.5rem;
 }
 
 .art_agenda {
