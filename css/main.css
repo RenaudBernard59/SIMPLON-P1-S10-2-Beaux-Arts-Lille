@@ -25,11 +25,11 @@ h2, h3, .navbar-nav li a, #selectactu {
 
 
 /* ##################################### HEADER ################################## */
-header {
+header, form input.form-control, form input.form-control:focus {
   background-color: #1D1D1E;
 }
 
-header p {
+header p, form input.form-control, form input.form-control:focus {
   color: white;
 }
 
@@ -37,6 +37,19 @@ header p {
   height: 73px;
   width: 56px;
 }
+
+form input.form-control {
+  box-sizing: border-box;
+  width: 161px;
+  height: 35px;
+  border: 4px solid white;
+  border-radius: 0;
+  padding-right: 30px;
+}
+form input.form-control:focus, form input.form-control:hover {
+  border-color: #D8383F;
+}
+
 /* ##################################### HEADER - END ################################## */
 
 /* ##################################### MAIN ################################## */
