@@ -74,6 +74,14 @@ form input.form-control:focus, form input.form-control:hover {
   font-size: 4.5rem;
 }
 
+#selectactu, #selectlang {-moz-appearance: none;}
+
+#selectactu {
+  background-color: white;
+  border-radius: 0;
+  border: 4px solid #1D1D1E;
+}
+
 .art_agenda {
   height: 276px;
   background-repeat: no-repeat;
@@ -107,7 +115,6 @@ form input.form-control:focus, form input.form-control:hover {
 
   #selectlang {
     border: 0;
-    -moz-appearance: none;
     font-family: Helvetica;
   }
   #selectlang:hover, #selectlang:focus {
