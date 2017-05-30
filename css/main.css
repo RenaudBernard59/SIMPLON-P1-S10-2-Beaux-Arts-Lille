@@ -34,7 +34,7 @@ header p, form input.form-control, form input.form-control:focus, #selectlang {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
 }
 
 .logolille {
@@ -69,8 +69,9 @@ form input.form-control:focus, form input.form-control:hover {
 }
 
 .agendaicon::before {content: "\e901";}
+
 .agendaicon {
-  font-size: 7.5rem;
+  font-size: 4.5rem;
 }
 
 .art_agenda {
