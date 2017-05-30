@@ -50,11 +50,24 @@ form input.form-control:focus, form input.form-control:hover {
   border-color: #D8383F;
 }
 
+.searchicon::before {
+  content: "\e92a";
+}
+
+.infoicon::before {
+  content: "\e938";
+}
+
 /* ##################################### HEADER - END ################################## */
 
 /* ##################################### MAIN ################################## */
 
 /* ################# agenda.html ###################### */
+
+.agendaicon::before {
+  content: "\e901";
+}
+
 .art_agenda {
   height: 276px;
   background-repeat: no-repeat;
