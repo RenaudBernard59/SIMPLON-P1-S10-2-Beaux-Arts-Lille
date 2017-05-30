@@ -7,15 +7,15 @@
     font-family: pba;
     src: url(../fonts/pba.ttf);
 }
-
-
-.pba {
-  font-family: pba;
+@font-face {
+    font-family: novecento;
+    src: url(../fonts/novecento.ttf);
 }
 
-.lovelo {
-  font-family: lovelo;
-}
+.pba {font-family: pba;}
+.lovelo {font-family: lovelo;}
+.novecento {font-family: novecento;}
+
 
 h2, h3, .navbar-nav li a, #selectactu {
   text-transform: uppercase;
@@ -25,11 +25,11 @@ h2, h3, .navbar-nav li a, #selectactu {
 
 
 /* ##################################### HEADER ################################## */
-header, form input.form-control, form input.form-control:focus {
+header, form input.form-control, form input.form-control:focus, #selectlang {
   background-color: #1D1D1E;
 }
 
-header p, form input.form-control, form input.form-control:focus {
+header p, form input.form-control, form input.form-control:focus, #selectlang {
   color: white;
 }
 
@@ -55,13 +55,8 @@ form input.form-control:focus, form input.form-control:hover {
   border-color: #D8383F;
 }
 
-.searchicon::before {
-  content: "\e92a";
-}
+.searchicon::before {content: "\e92a";}
 
-.infoicon::before {
-  content: "\e938";
-}
 
 /* ##################################### HEADER - END ################################## */
 
@@ -69,9 +64,7 @@ form input.form-control:focus, form input.form-control:hover {
 
 /* ################# agenda.html ###################### */
 
-.agendaicon::before {
-  content: "\e901";
-}
+.agendaicon::before {content: "\e901";}
 .agendaicon {
   font-size: 7.5rem;
 }
@@ -83,25 +76,42 @@ form input.form-control:focus, form input.form-control:hover {
   background-position: center;
 }
 
-.visite {
-  color : #935297;
-}
+.visite {color : #935297;}
 
-.evenement {
-  color: #D3336C;
-}
+.evenement {color: #D3336C;}
 
-.jpublic {
-  color: #79A506;
-}
+.jpublic {color: #79A506;}
 
 
 /* ################# agenda.html ###################### */
 
 /* ##################################### MAIN - END ################################## */
 
-
+/* ################################# DESKTOP ########################################## */
 @media (min-width: 992px){
+
+  /* ###################### HEADER ###################### */
+
+  .infoicon::before {content: "\e938";}
+
+  .searchicon {
+    position: relative;
+    top: 9px;
+    right: 30px;
+  }
+
+  #selectlang {
+    border: 0;
+    -moz-appearance: none;
+    font-family: Helvetica;
+  }
+  #selectlang:hover, #selectlang:focus {
+    color: #D8383F;
+  }
+
+  /* ###################### HEADER - END ###################### */
+
+  /* ###################### MAIN ###################### */
   .art_agenda{
     height: auto;
     background-size: contain;
@@ -132,4 +142,6 @@ form input.form-control:focus, form input.form-control:hover {
   .border_jpublic {
     border-color: #79A506;
   }
+  /* ###################### MAIN - END ###################### */
+
 }
