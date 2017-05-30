@@ -64,6 +64,10 @@ form input.form-control:focus, form input.form-control:hover {
 
 /* ################# agenda.html ###################### */
 
+.agendamain {
+  text-align: center;
+}
+
 .agendaicon::before {content: "\e901";}
 .agendaicon {
   font-size: 7.5rem;
