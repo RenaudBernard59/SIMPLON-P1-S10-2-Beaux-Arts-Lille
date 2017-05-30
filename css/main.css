@@ -1,0 +1,135 @@
+/* ##################################### GENERAL ################################## */
+@font-face {
+    font-family: lovelo;
+    src: url(../fonts/lovelo.ttf);
+}
+@font-face {
+    font-family: pba;
+    src: url(../fonts/pba.ttf);
+}
+
+
+.pba {
+  font-family: pba;
+}
+
+.lovelo {
+  font-family: lovelo;
+}
+
+h2, h3, .navbar-nav li a, #selectactu {
+  text-transform: uppercase;
+}
+
+/* ##################################### GENERAL - END ################################## */
+
+
+/* ##################################### HEADER ################################## */
+header, form input.form-control, form input.form-control:focus {
+  background-color: #1D1D1E;
+}
+
+header p, form input.form-control, form input.form-control:focus {
+  color: white;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.logolille {
+  height: 73px;
+  width: 56px;
+}
+
+form input.form-control {
+  box-sizing: border-box;
+  width: 161px;
+  height: 35px;
+  border: 4px solid white;
+  border-radius: 0;
+  padding-right: 30px;
+}
+
+form input.form-control:focus, form input.form-control:hover {
+  border-color: #D8383F;
+}
+
+.searchicon::before {
+  content: "\e92a";
+}
+
+.infoicon::before {
+  content: "\e938";
+}
+
+/* ##################################### HEADER - END ################################## */
+
+/* ##################################### MAIN ################################## */
+
+/* ################# agenda.html ###################### */
+
+.agendaicon::before {
+  content: "\e901";
+}
+.agendaicon {
+  font-size: 7.5rem;
+}
+
+.art_agenda {
+  height: 276px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.visite {
+  color : #935297;
+}
+
+.evenement {
+  color: #D3336C;
+}
+
+.jpublic {
+  color: #79A506;
+}
+
+
+/* ################# agenda.html ###################### */
+
+/* ##################################### MAIN - END ################################## */
+
+
+@media (min-width: 992px){
+  .art_agenda{
+    height: auto;
+    background-size: contain;
+  }
+
+  article {
+    height: 295px;
+  }
+
+  .bordertop {
+    border-top: 1px solid;
+  }
+
+  .ur_corner {
+    width: 37px;
+    height: 37px;
+    border-top: 16px solid;
+    border-right: 16px solid;
+    position: relative;
+    left: 15px;
+  }
+  .border_visite {
+    border-color: #935297;
+  }
+  .border_evenement {
+    border-color: #D3336C;
+  }
+  .border_jpublic {
+    border-color: #79A506;
+  }
+}
