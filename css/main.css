@@ -69,9 +69,22 @@ form input.form-control:focus, form input.form-control:hover, .searchicon:hover 
 }
 
 .agendaicon::before {content: "\e901";}
+#plus::before {content: "\e920";}
 
 .agendaicon {
   font-size: 4.5rem;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1D1D1E;
+  position: relative;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: 25px;
 }
 
 #selectactu, #selectlang {-moz-appearance: none;}
@@ -114,9 +127,6 @@ article p span {
   font-family: "open_sanslight";
 }
 
-#plus::before {
-  content: "\e920";
-}
 
 /* ################# agenda.html ###################### */
 
